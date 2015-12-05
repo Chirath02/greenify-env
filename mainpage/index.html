@@ -128,17 +128,46 @@
                         <li><a href="#about"><span class="btnicon fa fa-newspaper-o"></span>Updates</a></li>
                         <li><a href="#services"><span class="btnicon fa fa-globe"></span>Deforestation</a></li>
                         <li><a href="#portfolio"><span class="btnicon fa fa-film"></span>Videos</a></li>
-                        <li><a href="#testimonials"><span class="btnicon fa fa-users"></span>About us</a></li>
+                        <li><a href="#testimonials" ><span class="btnicon fa fa-users"></span>About us</a></li>
 
                         <!--don't forget to replace my email address below with yours-->
-                        <li><a href="mailto:m@creatrix.us"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
-                        <li class="active"><a href=""><span class="btnicon icon-cloud-download"></span>Download CV</a></li>
+                        <li><a id="onclick" href="#hero"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+
                     </ul>
 
                 </div><!--.nav-collapse -->
             </div>
         </nav><!--navbar end-->
      </header><!--header end-->
+
+     <!--Contact Form -->
+     <div id="contactdiv">
+     <form class="form" action="#" id="contact">
+     <img src="button_cancel.png" class="img" id="cancel"/>
+     <h3>Contact Form</h3>
+     <hr/><br/>
+     <label>Name: <span>*</span></label>
+     <br/>
+     <input type="text" id="name" placeholder="Name"/><br/>
+     <br/>
+     <label>Email: <span>*</span></label>
+     <br/>
+     <input type="text" id="email" placeholder="Email"/><br/>
+     <br/>
+     <label>Contact No: <span>*</span></label>
+     <br/>
+     <input type="text" id="contactno" placeholder="10 digit Mobile no."/><br/>
+     <br/>
+     <label>Message:</label>
+     <br/>
+     <textarea id="message" placeholder="Message......."></textarea><br/>
+     <br/>
+     <input type="button" id="send" value="Send"/>
+     <input type="button" id="cancel" value="Cancel"/>
+     <br/>
+     </form>
+     </div>
+
 
     <!-- ===========================
     FEATURED CLIENTS SECTION START
@@ -147,6 +176,7 @@
          <div class="container">
              <div class="col-md-3">
                  <h3>Our Inspiration:</h3>
+
              </div>
              <div class="col-md-9">
                  <ul><!--CLIENTS LOGO-->
@@ -161,10 +191,12 @@
      </div><!--FEATURED CLIENTS SECTION END-->
 
 
+
     <!-- ===========================
     ABOUT SECTION START
     =========================== -->
      <div id="about" class="container">
+
 
         <!-- LEFT PART OF THE ABOUT SECTION -->
          <div class="col-md-6">
@@ -274,7 +306,19 @@ convenor, Attappady Samrakshana Samithy.</p>
     <div id="portfolio">
         <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
           <span class="bigicon icon-rocket"></span>
-           <h3>A few recent works</h3>
+           <h3>Entertain yourselves</h3>
+           <video width="40%" poster="1.png" style="padding:1em" controls>
+              <source src="1.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <video width="40%" poster="2.png" style="padding:1em" controls>
+               <source src="2.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+             </video>
+             <video width="40%" poster="3.png" style="padding:1em" controls>
+                <source src="3.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
            <hr class="separetor">
         </div><!-- PORTFOLIO SECTION HEAD END -->
 
@@ -284,7 +328,7 @@ convenor, Attappady Samrakshana Samithy.</p>
         </div><!-- PORTFOLIO ITEMS END -->
 
         <!--Replace the URL below with your dribbble profile URL-->
-        <a class="btn btn-default wow fadeInUp" href="http://dribbble.com/srizon" role="button">
+        <a class="btn btn-default wow fadeInUp" href="" role="button">
             <span class="btnicon icon-social-dribbble"></span>
             <span class="button_text">View all items</span>
         </a>
@@ -412,6 +456,67 @@ convenor, Attappady Samrakshana Samithy.</p>
     <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
     <script src="js/drifolio.js"></script>
     <script src="js/wow.min.js"></script>
+    <script>$(document).ready(function() {
+setTimeout(popup, 3000);
+function popup() {
+$("#logindiv").css("display", "block");
+}
+$("#login #cancel").click(function() {
+$(this).parent().parent().hide();
+});
+$("#onclick").click(function() {
+$("#contactdiv").css("display", "block");
+});
+$("#contact #cancel").click(function() {
+$(this).parent().parent().hide();
+});
+// Contact form popup send-button click event.
+$("#send").click(function() {
+var name = $("#name").val();
+var email = $("#email").val();
+var contact = $("#contactno").val();
+var message = $("#message").val();
+if (name == "" || email == "" || contactno == "" || message == ""){
+alert("Please Fill All Fields");
+}else{
+if (validateEmail(email)) {
+$("#contactdiv").css("display", "none");
+}else {
+alert('Invalid Email Address');
+}
+function validateEmail(email) {
+var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+if (filter.test(email)) {
+return true;
+}else {
+return false;
+}
+}
+}
+});
+// Login form popup login-button click event.
+$("#loginbtn").click(function() {
+var name = $("#username").val();
+var password = $("#password").val();
+if (username == "" || password == ""){
+alert("Username or Password was Wrong");
+}else{
+$("#logindiv").css("display", "none");
+}
+});
+});</script>
+// Login form popup login-button click event.
+$("#loginbtn").click(function() {
+var name = $("#username").val();
+var password = $("#password").val();
+if (username == "" || password == ""){
+alert("Username or Password was Wrong");
+}else{
+$("#logindiv").css("display", "none");
+}
+});
+});
+});</script>
     <script>new WOW().init();</script>
   </body>
 </html>
