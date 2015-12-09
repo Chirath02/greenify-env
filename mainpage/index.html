@@ -11,6 +11,23 @@
     <meta name="description" content="A free Bootstrap powerd HTML template exclusively crafted for the super lazy designers like me who designed thousand of websites till today but never got a chance to build one himself.">
     <meta name="keywords" content="Free Portfolio Template, Free Template, Free Bootstrap Template, Dribbble Portfolio Template, Free HTML5 Template">
     <meta name="author" content="EvenFly Team">
+    <style>
+    .tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  padding: .5em;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+</style>
 
     <!-- DEVEOPER'S NOTE:
     This is a free Bootstrap powered HTML template from EvenFly. Feel free to download, modify and use it for yourself or your clients as long there is no money involved.
@@ -26,11 +43,7 @@
     <!-- ===========================
     FAVICONS
     =========================== -->
-    <link rel="icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
+    <link rel="shortcut icon" href="img/title.png" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- ===========================
@@ -73,7 +86,7 @@
         <div id="preloader">
             <div id="status">
                 <div class="loadicon fa fa-leaf wow tada infinite" data-wow-duration="8s"></div>
-                <h2> Painting Green </h2>
+                <h3> Painting Green </h3>
             </div>
         </div>
 
@@ -128,8 +141,7 @@
                         <li><a href="#about"><span class="btnicon fa fa-newspaper-o"></span>Updates</a></li>
                         <li><a href="#services"><span class="btnicon fa fa-globe"></span>Deforestation</a></li>
                         <li><a href="#portfolio"><span class="btnicon fa fa-film"></span>Videos</a></li>
-                        <li><a href="#testimonials" ><span class="btnicon fa fa-users"></span>About us</a></li>
-
+                        <li><a href="#testimonials"><span class="btnicon fa fa-users"></span>About us</a></li>
                         <!--don't forget to replace my email address below with yours-->
                         <li><a id="onclick" href="#hero"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
 
@@ -143,7 +155,7 @@
      <!--Contact Form -->
      <div id="contactdiv">
      <form class="form" action="#" id="contact">
-     <img src="button_cancel.png" class="img" id="cancel"/>
+     <img src="img/button_cancel.png" class="img" id="cancel"/>
      <h3>Contact Form</h3>
      <hr/><br/>
      <label>Name: <span>*</span></label>
@@ -222,19 +234,19 @@ town last week. Two days back, its roots were digged out and taken, said M Sukum
 
 convenor, Attappady Samrakshana Samithy.</p>
 
-             <a class="dribbble-follow-button wow bounce" href="http://dribbble.com/srizon">Follow</a>
+             <a class="big icon dribbble-follow-button wow bounce" href="">Follow blog</a>
              </div> <!-- ABOUT INFO END -->
 
 
             <div class="myapps row">
-                <h5>Tools and apps I use everyday:</h5>
+                <h5>Tools and apps we used:</h5>
 
                 <ul><!-- FAVORITE APP ICONS START -->
                     <li><img class="wow animated bounceInUp" data-wow-duration="1s" src="img/photoshop.svg" alt="Photoshop"></li>
-                    <li><img class="wow bounceInUp" data-wow-duration="2s" src="img/illustrator.svg" alt="Illustrator"></li>
-                    <li><img class="wow bounceInUp" data-wow-duration="3s" src="img/flash.svg" alt="Adobe Flash"></li>
-                    <li><img class="wow animated bounceInUp" data-wow-duration="4s" src="img/after_effects.svg" alt="After Effects"></li>
-                    <li><img class="wow bounceInUp" data-wow-duration="5s" src="img/indesign.svg" alt="InDesign"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="2s" src="img/GitHub.png" alt="Illustrator"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="3s" src="img/git.jpg" alt="Adobe Flash"></li>
+                    <li><img class="wow animated bounceInUp" data-wow-duration="4s" src="img/chrome.png" alt="After Effects"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="5s" src="img/atom.jpg" alt="InDesign"></li>
                 </ul><!-- FAVORITE APP ICONS END -->
             </div>
          </div><!-- LEFT PART OF THE ABOUT SECTION END -->
@@ -307,16 +319,16 @@ convenor, Attappady Samrakshana Samithy.</p>
         <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
           <span class="bigicon icon-rocket"></span>
            <h3>Entertain yourselves</h3>
-           <video width="40%" poster="1.png" style="padding:1em" controls>
-              <source src="1.mp4" type="video/mp4">
+           <video width="40%" poster="video/1.png" style="padding:1em" controls>
+              <source src="video/1.mp4" type="video/mp4">
               Your browser does not support HTML5 video.
             </video>
-            <video width="40%" poster="2.png" style="padding:1em" controls>
-               <source src="2.mp4" type="video/mp4">
+            <video width="40%" poster="video/2.png" style="padding:1em" controls>
+               <source src="video/2.mp4" type="video/mp4">
                Your browser does not support HTML5 video.
              </video>
-             <video width="40%" poster="3.png" style="padding:1em" controls>
-                <source src="3.mp4" type="video/mp4">
+             <video width="40%" poster="video/3.png" style="padding:1em" controls>
+                <source src="video/3.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
            <hr class="separetor">
@@ -333,190 +345,206 @@ convenor, Attappady Samrakshana Samithy.</p>
             <span class="button_text">View all items</span>
         </a>
     </div><!-- PORTFOLIO SECTION END -->
-
     <!-- ===========================
-    TESTIMONIAL SECTION START
-    =========================== -->
-    <div id="testimonials" class="container">
-        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-           <span class="bigicon icon-bubbles"></span>
-           <h3>This is what I love to listen</h3>
-           <h4>Expedita nobis natus doloribus blanditiis quos, atque voluptatem, veritatis soluta eveniet ea!</h4>
-           <hr class="separetor">
-        </div><!-- TESTIMONIAL SECTIONHEAD END -->
+        TESTIMONIAL SECTION START
+        =========================== -->
+        <div id="testimonials" class="container">
+            <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+               <span class="bigicon fa fa-users"></span>
+               <h3>Who we are</h3>
+               <h4>Some young developers with a mind to Innovate</h4>
+               <hr class="separetor">
+            </div><!-- TESTIMONIAL SECTIONHEAD END -->
 
-        <!-- TESTIMONIAL ITEMS START -->
-        <div class="row">
-            <!-- 1ST TESTIMONIAL ITEM -->
-            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
-                <div class="clientsphoto">
-                    <img src="img/dan.jpg" alt="Dan">
-                </div>
+            <!-- TESTIMONIAL ITEMS START -->
+            <div class="row">
+                <!-- 1ST TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/heeraj.jpg" alt="Heeraj">
+                    </div>
 
-                <div class="quote">
-                    <blockquote>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
-                    </blockquote>
-                    <h5>Dan Cederholm</h5>
-                    <p>Co-Founder, Dribbble</p>
-                </div>
-            </div><!-- 1ST TESTIMONIAL ITEM END -->
+                    <div class="quote">
+                        <blockquote>
+                           <p>Web Exploitation Specialist ,Ethical Hacker.</p>
+                        </blockquote>
+                        <h5>Heeraj</h5>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 1ST TESTIMONIAL ITEM END -->
 
-            <!-- 2ND TESTIMONIAL ITEM -->
-            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
-                <div class="clientsphoto">
-                    <img src="img/bill.jpg" alt="Bill">
-                </div>
+                <!-- 2ND TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/chirath.jpg" alt="Chirath">
+                    </div>
 
-                <div class="quote">
-                    <blockquote>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et. lorem</p>
-                    </blockquote>
-                    <h5>Bill S Kenney</h5>
-                    <p>Art Director at Focus Lab LLC.</p>
-                </div>
-            </div><!-- 2ND TESTIMONIAL ITEM END -->
+                    <div class="quote">
+                        <blockquote>
+                           <p>Website and Web app designer.Opensource Devoloper</p>
+                        </blockquote>
+                        <h5>Chirath R</h5>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 2ND TESTIMONIAL ITEM END -->
 
-            <!-- 3RD TESTIMONIAL ITEM -->
-            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
-                <div class="clientsphoto">
-                    <img src="img/eric.png" alt="Eric">
-                </div>
+                <!-- 3RD TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn tooltip-wrap" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/nandu.png" alt="Nandu">
+                    </div>
 
-                <div class="quote">
-                    <blockquote>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
-                    </blockquote>
-                    <h5>Eric Hoffman</h5>
-                    <p>Principal Designer, JellyJar</p>
-                </div>
-            </div><!-- 3RD TESTIMONIAL ITEM END -->
+                    <div class="quote">
+                        <blockquote>
+                           <p>Violinist, Android app developer, Fps gamer.</p>
+                        </blockquote>
+                        <h5>NandaKishore</h5>
+                        <div class="tooltip-content">
+        <h4 sytle="color:yellow">Nandbaby</h4>
+      </div>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 3RD TESTIMONIAL ITEM END -->
 
-            <!-- 4TH TESTIMONIAL ITEM -->
-            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
-                <div class="clientsphoto">
-                    <img src="img/ramil.jpg" alt="Ramil">
-                </div>
+                <!-- 4TH TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/ramya.jpg" alt="Ramya">
+                    </div>
 
-                <div class="quote">
-                    <blockquote>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia et pariatur ipsam tempora officia ea iusto expedita, nulla, hic odit saepe repellat nesciunt dolorum, officiis laborum ad, aliquam. Quos, et.</p>
-                    </blockquote>
-                    <h5>Ramil Derogongun</h5>
-                    <p>Visual Designer, Bluroon</p>
-                </div>
-            </div><!-- 4TH TESTIMONIAL ITEM END -->
-        </div>
-    </div><!-- TESTIMONIAL SECTION END -->
+                    <div class="quote">
+                        <blockquote>
+                           <p>Design Speacilist, Support manager</p>
+                        </blockquote>
+                        <h5>Ramya</h5>
+                        <p>Visual Designer ,Greenify</p>
+                    </div>
+                </div><!-- 4TH TESTIMONIAL ITEM END -->
+                <!-- 5TH TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn tooltip-wrap" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/nikitha.jpg" alt="Nikitha">
+                    </div>
 
-    <!-- ===========================
-    FOOTER START
-    =========================== -->
-    <footer>
-        <div class="container">
-            <span class="bigicon icon-speedometer "></span>
+                    <div class="quote">
+                        <blockquote>
+                           <p>Documantaion and support</p>
+                        </blockquote>
+                        <h5>Nikitha</h5>
+                        <p>Support, Greenify</p>
+                    </div>
+                </div><!-- 5TH TESTIMONIAL ITEM END -->
+            </div>
+        </div><!-- TESTIMONIAL SECTION END -->
 
-            <div class="footerlinks"><!-- FOOTER LINKS START -->
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+        <!-- ===========================
+        FOOTER START
+        =========================== -->
+        <footer>
+            <div class="container">
+                <span class="bigicon icon-speedometer "></span>
 
-                    <!--replace the email address below with your email address-->
-                    <li><a href="mailto:m@creatrix.us">Contact</a></li>
-                </ul>
-            </div><!-- FOOTER LINKS END -->
+                <div class="footerlinks"><!-- FOOTER LINKS START -->
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">Updates</a></li>
+                        <li><a href="#services">Deforestation</a></li>
+                        <li><a href="#portfolio">Videos</a></li>
+                        <li><a href="#testimonials">About Us</a></li>
 
-            <div class="copyright"><!-- FOOTER COPYRIGHT START -->
-                <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="http://evenfly.com">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.</p>
-            </div><!-- FOOTER COPYRIGHT END -->
+                        <!--replace the email address below with your email address-->
+                        <li><a href="mailto:m@creatrix.us">Contact</a></li>
+                    </ul>
+                </div><!-- FOOTER LINKS END -->
+                <div class="copyright"><!-- FOOTER COPYRIGHT START -->
+                    <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="http://evenfly.com">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.</p>
+                </div><!-- FOOTER COPYRIGHT END -->
 
-            <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
-                <ul>
-                    <li><a href="http://facebook.com/MamunSrizon"><span class="icon-social-facebook"></span></a></li>
-                    <li><a href="http://twitter.com/MamunSrizon"><span class="icon-social-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon-social-youtube"></span></a></li>
-                    <li><a href="http://dribbble.com/srizon"><span class="icon-social-dribbble"></span></a></li>
-                    <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
-                 </ul>
-             </div><!-- FOOTER SOCIAL ICONS END -->
-         </div>
-     </footer><!-- FOOTER END -->
+                <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+                    <ul>
+                        <li><a href="http://facebook.com/MamunSrizon"><span class="icon-social-facebook"></span></a></li>
+                        <li><a href="http://twitter.com/MamunSrizon"><span class="icon-social-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                        <li><a href="http://dribbble.com/srizon"><span class="icon-social-dribbble"></span></a></li>
+                        <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+                     </ul>
+                 </div><!-- FOOTER SOCIAL ICONS END -->
+             </div>
+         </footer><!-- FOOTER END -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-    <!--Other necessary scripts-->
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
-    <script src="js/drifolio.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>$(document).ready(function() {
-setTimeout(popup, 3000);
-function popup() {
-$("#logindiv").css("display", "block");
-}
-$("#login #cancel").click(function() {
-$(this).parent().parent().hide();
-});
-$("#onclick").click(function() {
-$("#contactdiv").css("display", "block");
-});
-$("#contact #cancel").click(function() {
-$(this).parent().parent().hide();
-});
-// Contact form popup send-button click event.
-$("#send").click(function() {
-var name = $("#name").val();
-var email = $("#email").val();
-var contact = $("#contactno").val();
-var message = $("#message").val();
-if (name == "" || email == "" || contactno == "" || message == ""){
-alert("Please Fill All Fields");
-}else{
-if (validateEmail(email)) {
-$("#contactdiv").css("display", "none");
-}else {
-alert('Invalid Email Address');
-}
-function validateEmail(email) {
-var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-if (filter.test(email)) {
-return true;
-}else {
-return false;
-}
-}
-}
-});
-// Login form popup login-button click event.
-$("#loginbtn").click(function() {
-var name = $("#username").val();
-var password = $("#password").val();
-if (username == "" || password == ""){
-alert("Username or Password was Wrong");
-}else{
-$("#logindiv").css("display", "none");
-}
-});
-});</script>
-// Login form popup login-button click event.
-$("#loginbtn").click(function() {
-var name = $("#username").val();
-var password = $("#password").val();
-if (username == "" || password == ""){
-alert("Username or Password was Wrong");
-}else{
-$("#logindiv").css("display", "none");
-}
-});
-});
-});</script>
-    <script>new WOW().init();</script>
-  </body>
-</html>
+        <!--Other necessary scripts-->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+        <script src="js/drifolio.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script>$(document).ready(function() {
+    setTimeout(popup, 3000);
+    function popup() {
+    $("#logindiv").css("display", "block");
+    }
+    $("#login #cancel").click(function() {
+    $(this).parent().parent().hide();
+    });
+    $("#onclick").click(function() {
+    $("#contactdiv").css("display", "block");
+    });
+    $("#contact #cancel").click(function() {
+    $(this).parent().parent().hide();
+    });
+    // Contact form popup send-button click event.
+    $("#send").click(function() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var contact = $("#contactno").val();
+    var message = $("#message").val();
+    if (name == "" || email == "" || contactno == "" || message == ""){
+    alert("Please Fill All Fields");
+    }else{
+    if (validateEmail(email)) {
+    $("#contactdiv").css("display", "none");
+    }else {
+    alert('Invalid Email Address');
+    }
+    function validateEmail(email) {
+    var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+    if (filter.test(email)) {
+    return true;
+    }else {
+    return false;
+    }
+    }
+    }
+    });
+    // Login form popup login-button click event.
+    $("#loginbtn").click(function() {
+    var name = $("#username").val();
+    var password = $("#password").val();
+    if (username == "" || password == ""){
+    alert("Username or Password was Wrong");
+    }else{
+    $("#logindiv").css("display", "none");
+    }
+    });
+    });</script>
+  <script>
+    // Login form popup login-button click event.
+    $("#loginbtn").click(function() {
+    var name = $("#username").val();
+    var password = $("#password").val();
+    if (username == "" || password == ""){
+    alert("Username or Password was Wrong");
+    }else{
+    $("#logindiv").css("display", "none");
+    }
+    });
+    });
+    });</script>
+      </body>
+    </html>
