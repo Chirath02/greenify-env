@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <style>
+    .tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  padding: .5em;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+</style>
+
+    <!-- DEVEOPER'S NOTE:
+    This is a free Bootstrap powered HTML template from EvenFly. Feel free to download, modify and use it for yourself or your clients as long there is no money involved.
+
+    Please don't try to sale it from anywhere; because I want it to be free, forever. If you sale it, That's me who deserves the money, not you :)
+    -->
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>Greenify</title><!-- This is what you see on your browser tab-->
+
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="shortcut icon" href="img/title.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ===========================
+    ICONS:
+    =========================== -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
+
+    <!-- HTML5 shim and Respond.js for IE8 t of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- ===========================
+   GOOGLE ANALYTICS (Optional)
+   =========================== -->
+
+    <!--Replace this line with your analytics code-->
+
+    <!-- Analytics end-->
+
+   </head>
+    <body data-spy="scroll">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="loadicon fa fa-leaf wow tada infinite" data-wow-duration="8s"></div>
+                <h3> Painting Green </h3>
+            </div>
+        </div>
+
+       <header>
+        <!-- ===========================
+        HERO AREA
+        =========================== -->
+        <div id="hero">
+            <div class="container herocontent">
+                <h1 class="wow fadeInUp" data-wow-duration="2s" style="font-weight:600;font-size:5em;text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);">  <span class="brandicon fa fa-leaf "></span>Greenify</h1>
+		<h3 class="wow fadeInDown" data-wow-duration="3s">live GREEN ,love GREEN, think <br>GREEN Join the green side </h3>
+            </div>
+
+            <!-- Featured image on the Hero area -->
+            <img class="heroshot wow bounceInUp" data-wow-duration="4s" src="img/hero-img.png" alt="Featured Work">
+        </div><!--HERO AREA END-->
+
+        <!-- ===========================
+         NAVBAR START
+         =========================== -->
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+
+                      <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+
+                           <a class="navbar-brand" href="#hero">
+                            <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                            <span class="brandicon fa fa-leaf "></span>
+                            <span class="brandname">Greenify</span>
+                        </a>
+                    </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right"><!--YOUR NAVIGATION ITEMS STRAT BELOW-->
+                        <li><a href="http://10.100.17.173:4000/"><span class="btnicon fa fa-bookmark"></span>Blog</a></li>
+                        <li><a href="blob"><span class="btnicon fa fa-bars"></span>Forum</a></li>
+                        <li><a href="#about"><span class="btnicon fa fa-newspaper-o"></span>Updates</a></li>
+                        <li><a href="#services"><span class="btnicon fa fa-globe"></span>Deforestation</a></li>
+                        <li><a href="#portfolio"><span class="btnicon fa fa-film"></span>Videos</a></li>
+                        <li><a href="#testimonials"><span class="btnicon fa fa-users"></span>About us</a></li>
+                        <!--don't forget to replace my email address below with yours-->
+                        <li><a id="onclick" href="#hero"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+
+                    </ul>
+
+                </div><!--.nav-collapse -->
+            </div>
+        </nav><!--navbar end-->
+     </header><!--header end-->
+
+     <!--Contact Form -->
+     <div id="contactdiv">
+     <form class="form" action="#" id="contact">
+     <img src="img/button_cancel.png" class="img" id="cancel"/>
+     <h3>Contact Form</h3>
+     <hr/><br/>
+     <label>Name: <span>*</span></label>
+     <br/>
+     <input type="text" id="name" placeholder="Name"/><br/>
+     <br/>
+     <label>Email: <span>*</span></label>
+     <br/>
+     <input type="text" id="email" placeholder="Email"/><br/>
+     <br/>
+     <label>Contact No: <span>*</span></label>
+     <br/>
+     <input type="text" id="contactno" placeholder="10 digit Mobile no."/><br/>
+     <br/>
+     <label>Message:</label>
+     <br/>
+     <textarea id="message" placeholder="Message......."></textarea><br/>
+     <br/>
+     <input type="button" id="send" value="Send"/>
+     <input type="button" id="cancel" value="Cancel"/>
+     <br/>
+     </form>
+     </div>
+
+
+    <!-- ===========================
+    FEATURED CLIENTS SECTION START
+    =========================== -->
+     <div id="clients">
+         <div class="container">
+             <div class="col-md-3">
+                 <h3>Our Inspiration:</h3>
+
+             </div>
+             <div class="col-md-9">
+                 <ul><!--CLIENTS LOGO-->
+                     <li><a href="http://www.greenpeace.org/international/en/"><img src="img/payoneer.png" alt="Payoneer"></a></li>
+                     <li><img src="img/amazon.png" alt="Amazon"></li>
+                     <li><img src="img/elance-odesk.png" alt="Elance-oDesk"></li>
+                     <li><a href="https://www.facebook.com/Environmental-Protection-Welfare-Association-of-India-206199246077570/"><img src="img/curb.png" alt="Curb Envy"></a></li>
+                 </ul><!--CLIENTS LOGO END-->
+             </div>
+         </div>
+         <hr><!-- SECTION SEPARETOR LINE -->
+     </div><!--FEATURED CLIENTS SECTION END-->
+
+
+
+    <!-- ===========================
+    ABOUT SECTION START
+    =========================== -->
+     <div id="about" class="container">
+
+
+        <!-- LEFT PART OF THE ABOUT SECTION -->
+         <div class="col-md-6">
+            <div class="row">
+             <h2 class="wow fadeInDown" data-wow-duration="2s">Illegal felling of sandalwood trees rampant in
+
+Attapadi</h2>
+
+             <h4 class="wow fadeInUp" data-wow-duration="3s">PALAKKAD: The illegal felling of sandalwood trees from different parts of Pudur and
+
+Sholayur grama panchayats had been reported from Attappadi Hills during the last
+
+couple of weeks.</h4>
+
+             <p class="wow fadeInDown" data-wow-duration="3s">There were incidents of felling of old trees and also planted sandalwood of 20 to 30 years
+
+old from Veettikundu, Puliyappathi, Kadampara and Marappalam in Sholayur grama
+
+panchayat and Mulli, Cheerakkadavu and Bommiyampadi in Pudur grama panchayat.</p>
+             <p class="wow fadeInDown" data-wow-duration="3s">An old sandalwood tree was felled from the house compound of a political leader at Agali
+
+town last week. Two days back, its roots were digged out and taken, said M Sukumaran,
+
+convenor, Attappady Samrakshana Samithy.</p>
+
+             <a class="big icon dribbble-follow-button wow bounce" href="">Follow blog</a>
+             </div> <!-- ABOUT INFO END -->
+
+
+            <div class="myapps row">
+                <h5>Tools and apps we used:</h5>
+
+                <ul><!-- FAVORITE APP ICONS START -->
+                    <li><img class="wow animated bounceInUp" data-wow-duration="1s" src="img/photoshop.svg" alt="Photoshop"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="2s" src="img/GitHub.png" alt="Illustrator"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="3s" src="img/git.jpg" alt="Adobe Flash"></li>
+                    <li><img class="wow animated bounceInUp" data-wow-duration="4s" src="img/chrome.png" alt="After Effects"></li>
+                    <li><img class="wow bounceInUp" data-wow-duration="5s" src="img/atom.jpg" alt="InDesign"></li>
+                </ul><!-- FAVORITE APP ICONS END -->
+            </div>
+         </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+        <!--Left part end-->
+
+         <!-- RIGHT PART OF THE ABOUT SECTION -->
+         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s" style="">
+             <img src="img/user.jpg" alt="Mamun Srizon">
+         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+     </div><!-- ABOUT SECTION END -->
+
+    <hr><!-- SECTION SEPARETOR LINE -->
+
+    <!-- ===========================
+    SERVICE SECTION START
+    =========================== -->
+    <div id="services" class="container">
+
+        <!-- SERVICE SECTION HEADING START -->
+        <div class="sectionhead  row wow fadeInUp">
+            <span class="bigicon icon-cup "></span>
+            <h3>This is what I can do for you</h3>
+            <hr class="separetor">
+         </div><!--SERVICE SECTION HEADING END-->
+
+        <!-- SERVICE ITEMS START -->
+        <div class="row">
+          <a href="http://10.100.17.173:4000/2015/12/02/Deforrestation-un/">
+               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/images.png" alt="">
+                   <h4>Latest News on Deforestation</h4>
+                   <p>Deforestation slows, ‘but we need to do better’ on sustainable forest use – UN agriculture chief.</p>
+                </div> <!-- ITEM END -->
+                </a>
+  <a href="http://10.100.17.173:4000/2015/12/02/Deforrestation/">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/pols_feature2.jpg" alt="">
+                   <h4>Illegal Felling Of Trees</h4>
+                   <p>Illegal felling of trees leads to drastic changes in the ecosystem.</p>
+                </div> <!-- ITEM END -->
+                </a>
+  <a href="http://10.100.17.173:4000/2015/12/02/forest-fire/">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/fire.jpg" alt="">
+                   <h4>Wild Fire</h4>
+                   <p>"Wildfire" is the term applied to any unwanted, unplanned, damaging fire burning in forest, shrub or grass and is one of the most powerful natural forces known to people. While sometimes caused by lightning, nine out of ten wildfires are human-caused.</p>
+                </div> <!-- ITEM END -->
+                </a>
+  <a href="">
+               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/comingsoon.png" alt="">
+                   <h4>Windows App Design</h4>
+                   <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+                </div> <!-- ITEM END -->
+                </a>
+  <a href="">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/comingsoon.png" alt="">
+                   <h4>Brand Identity Design</h4>
+                   <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+                </div> <!-- ITEM END -->
+              </a>
+  <a href="">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="img/comingsoon.png" alt="">
+                   <h4>CMYK Print Design</h4>
+                   <p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
+                </div> <!-- ITEM END -->
+                </a>
+        </div><!-- SERVICE ITEMS END-->
+    </div><!-- SERVICE SECTION END -->
+
+    <!-- ===========================
+    PORTFOLIO SECTION START
+    =========================== -->
+    <div id="portfolio">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+          <span class="bigicon icon-rocket"></span>
+           <h3>Entertain yourselves</h3>
+           <video width="40%" poster="video/1.png" style="padding:1em" controls>
+              <source src="video/1.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <video width="40%" poster="video/2.png" style="padding:1em" controls>
+               <source src="video/2.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+             </video>
+             <video width="40%" poster="video/3.png" style="padding:1em" controls>
+                <source src="video/3.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+           <hr class="separetor">
+        </div><!-- PORTFOLIO SECTION HEAD END -->
+
+        <!-- PORTFOLIO ITEMS START -->
+        <div class="portfolioitems container">
+            <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
+        </div><!-- PORTFOLIO ITEMS END -->
+
+        <!--Replace the URL below with your dribbble profile URL-->
+        <a class="btn btn-default wow fadeInUp" href="" role="button">
+            <span class="btnicon icon-social-dribbble"></span>
+            <span class="button_text">View all items</span>
+        </a>
+    </div><!-- PORTFOLIO SECTION END -->
+    <!-- ===========================
+        TESTIMONIAL SECTION START
+        =========================== -->
+        <div id="testimonials" class="container">
+            <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+               <span class="bigicon fa fa-users"></span>
+               <h3>Who we are</h3>
+               <h4>Some young developers with a mind to Innovate</h4>
+               <hr class="separetor">
+            </div><!-- TESTIMONIAL SECTIONHEAD END -->
+
+            <!-- TESTIMONIAL ITEMS START -->
+            <div class="row">
+                <!-- 1ST TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/heeraj.jpg" alt="Heeraj">
+                    </div>
+
+                    <div class="quote">
+                        <blockquote>
+                           <p>Web Exploitation Specialist ,Ethical Hacker.</p>
+                        </blockquote>
+                        <h5>Heeraj</h5>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 1ST TESTIMONIAL ITEM END -->
+
+                <!-- 2ND TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/chirath.jpg" alt="Chirath">
+                    </div>
+
+                    <div class="quote">
+                        <blockquote>
+                           <p>Website and Web app designer.Opensource Devoloper</p>
+                        </blockquote>
+                        <h5>Chirath R</h5>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 2ND TESTIMONIAL ITEM END -->
+
+                <!-- 3RD TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn tooltip-wrap" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/nandu.png" alt="Nandu">
+                    </div>
+
+                    <div class="quote">
+                        <blockquote>
+                           <p>Violinist, Android app developer, Fps gamer.</p>
+                        </blockquote>
+                        <h5>NandaKishore</h5>
+                        <div class="tooltip-content">
+        <h4 sytle="color:yellow">Nandbaby</h4>
+      </div>
+                        <p>Co-Founder, Greenify</p>
+                    </div>
+                </div><!-- 3RD TESTIMONIAL ITEM END -->
+
+                <!-- 4TH TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/ramya.jpg" alt="Ramya">
+                    </div>
+
+                    <div class="quote">
+                        <blockquote>
+                           <p>Promotion and Design Speacilist, Support manager</p>
+                        </blockquote>
+                        <h5>Ramya</h5>
+                        <p>Visual Designer ,Greenify</p>
+                    </div>
+                </div><!-- 4TH TESTIMONIAL ITEM END -->
+                <!-- 5TH TESTIMONIAL ITEM -->
+                <div class="col-md-6 wow bounceIn tooltip-wrap" data-wow-duration="3s">
+                    <div class="clientsphoto">
+                        <img src="img/aboutUs/nikitha.jpg" alt="Nikitha">
+                    </div>
+
+                    <div class="quote">
+                        <blockquote>
+                           <p>Documentation and support</p>
+                        </blockquote>
+                        <h5>Nikitha</h5>
+                        <p>Co-founder, Greenify</p>
+                    </div>
+                </div><!-- 5TH TESTIMONIAL ITEM END -->
+            </div>
+        </div><!-- TESTIMONIAL SECTION END -->
+
+        <!-- ===========================
+        FOOTER START
+        =========================== -->
+        <footer>
+            <div class="container">
+                <span class="bigicon icon-speedometer "></span>
+
+                <div class="footerlinks"><!-- FOOTER LINKS START -->
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">Updates</a></li>
+                        <li><a href="#services">Deforestation</a></li>
+                        <li><a href="#portfolio">Videos</a></li>
+                        <li><a href="#testimonials">About Us</a></li>
+
+                        <!--replace the email address below with your email address-->
+                        <li><a href="mailto:m@creatrix.us">Contact</a></li>
+                    </ul>
+                </div><!-- FOOTER LINKS END -->
+                <div class="copyright"><!-- FOOTER COPYRIGHT START -->
+			<p><a href="#">Drifolio</a> Live GREEN ,love GREEN, think <br>GREEN Join the green side </p>
+                </div><!-- FOOTER COPYRIGHT END -->
+
+                <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+                    <ul>
+                        <li><a href="http://facebook.com/MamunSrizon"><span class="icon-social-facebook"></span></a></li>
+                        <li><a href="http://twitter.com/MamunSrizon"><span class="icon-social-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                        <li><a href="http://dribbble.com/srizon"><span class="icon-social-dribbble"></span></a></li>
+                        <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+                     </ul>
+                 </div><!-- FOOTER SOCIAL ICONS END -->
+             </div>
+         </footer><!-- FOOTER END -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+        <!--Other necessary scripts-->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+        <script src="js/drifolio.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script>$(document).ready(function() {
+    setTimeout(popup, 3000);
+    function popup() {
+    $("#logindiv").css("display", "block");
+    }
+    $("#login #cancel").click(function() {
+    $(this).parent().parent().hide();
+    });
+    $("#onclick").click(function() {
+    $("#contactdiv").css("display", "block");
+    });
+    $("#contact #cancel").click(function() {
+    $(this).parent().parent().hide();
+    });
+    // Contact form popup send-button click event.
+    $("#send").click(function() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var contact = $("#contactno").val();
+    var message = $("#message").val();
+    if (name == "" || email == "" || contactno == "" || message == ""){
+    alert("Please Fill All Fields");
+    }else{
+    if (validateEmail(email)) {
+    $("#contactdiv").css("display", "none");
+    }else {
+    alert('Invalid Email Address');
+    }
+    function validateEmail(email) {
+    var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+    if (filter.test(email)) {
+    return true;
+    }else {
+    return false;
+    }
+    }
+    }
+    });
+    // Login form popup login-button click event.
+    $("#loginbtn").click(function() {
+    var name = $("#username").val();
+    var password = $("#password").val();
+    if (username == "" || password == ""){
+    alert("Username or Password was Wrong");
+    }else{
+    $("#logindiv").css("display", "none");
+    }
+    });
+    });</script>
+  <script>
+    // Login form popup login-button click event.
+    $("#loginbtn").click(function() {
+    var name = $("#username").val();
+    var password = $("#password").val();
+    if (username == "" || password == ""){
+    alert("Username or Password was Wrong");
+    }else{
+    $("#logindiv").css("display", "none");
+    }
+    });
+    });
+    });</script>
+      </body>
+    </html>
