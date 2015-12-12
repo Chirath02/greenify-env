@@ -1,0 +1,17 @@
+# Site settings
+title: GREENIFY
+header-img: img/home-bg.jpg
+email: heeraj123@gmail.com
+description: "The official blog of I4INFO, Knowledge for the better future!"
+baseurl: ""
+url: "http://i4info.in/"
+twitter_username: heeraj123
+github_username:  heeraj123
+facebook_username:  heeraj123
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
